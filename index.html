@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuddle Login 🧸🐼</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        🎉 Welcome to the Cuddle Zone!
+    </div>
+
+    <!-- Floating Bubbles -->
+    <div class="bg-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Floating Emojis -->
+    <div class="floating-emojis">
+        <span class="emoji-float">🌸</span>
+        <span class="emoji-float">✨</span>
+        <span class="emoji-float">🍭</span>
+        <span class="emoji-float">🎀</span>
+        <span class="emoji-float">⭐</span>
+        <span class="emoji-float">🌈</span>
+        <span class="emoji-float">💖</span>
+        <span class="emoji-float">🍪</span>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card-wrapper">
+
+        <div class="card">
+
+            <!-- Teddy Bear -->
+            <div class="mascot">
+                <svg viewBox="0 0 120 120">
+
+                    <circle cx="28" cy="32" r="18" fill="#C68B59"/>
+                    <circle cx="92" cy="32" r="18" fill="#C68B59"/>
+
+                    <circle cx="28" cy="32" r="11" fill="#E8A870"/>
+                    <circle cx="92" cy="32" r="11" fill="#E8A870"/>
+
+                    <circle cx="60" cy="58" r="38" fill="#C68B59"/>
+
+                    <ellipse class="bear-eye"
+                        cx="46"
+                        cy="52"
+                        rx="6"
+                        ry="7"
+                        fill="#2D2D2D"/>
+
+                    <ellipse class="bear-eye"
+                        cx="74"
+                        cy="52"
+                        rx="6"
+                        ry="7"
+                        fill="#2D2D2D"/>
+
+                    <circle cx="48" cy="50" r="2" fill="white"/>
+                    <circle cx="76" cy="50" r="2" fill="white"/>
+
+                    <ellipse
+                        cx="60"
+                        cy="66"
+                        rx="14"
+                        ry="10"
+                        fill="#E8A870"/>
+
+                    <ellipse
+                        cx="60"
+                        cy="61"
+                        rx="5"
+                        ry="3"
+                        fill="#8B5E3C"/>
+
+                    <path
+                        d="M52 69 Q60 76 68 69"
+                        stroke="#8B5E3C"
+                        stroke-width="2.5"
+                        fill="none"/>
+
+                    <circle
+                        cx="36"
+                        cy="65"
+                        r="8"
+                        fill="rgba(255,143,171,0.5)"/>
+
+                    <circle
+                        cx="84"
+                        cy="65"
+                        r="8"
+                        fill="rgba(255,143,171,0.5)"/>
+
+                </svg>
+            </div>
+
+            <!-- Tabs -->
+
+            <div class="tab-group">
+
+                <button
+                    class="tab-btn active"
+                    id="tab-login"
+                    onclick="switchTab('login')">
+
+                    🐻 Login
+
+                </button>
+
+                <button
+                    class="tab-btn"
+                    id="tab-signup"
+                    onclick="switchTab('signup')">
+
+                    🐼 Sign Up
+
+                </button>
+
+            </div>
+
+            <!-- LOGIN PANEL -->
+
+            <div class="panel active" id="panel-login">
+
+                <h2 class="form-title">
+                    Welcome Back 🧸
+                </h2>
+
+                <p class="form-sub">
+                    Login to your cozy cuddle space
+                </p>
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <span class="input-icon">
+                        📧
+                    </span>
+
+                    <input
+                        type="email"
+                        placeholder="cutie@example.com">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <span class="input-icon">
+                        🔐
+                    </span>
+
+                    <input
+                        type="password"
+                        id="login-pw"
+                        placeholder="Your password">
+
+                    <span
+                        class="pw-toggle"
+                        onclick="togglePw('login-pw',this)">
+
+                        👁️
+
+                    </span>
+
+                </div>
+
+                <div class="check-row">
+
+                    <input
+                        type="checkbox"
+                        id="remember">
+
+                    <label for="remember">
+                        Remember Me 🐾
+                    </label>
+
+                    <a href="#" class="forgot">
+                        Forgot?
+                    </a>
+
+                </div>
+
+                <button
+                    class="btn-submit"
+                    onclick="handleSubmit('login')">
+
+                    🐻 Login
+
+                </button>
+
+            </div>
+
+            <!-- SIGNUP PANEL -->
+
+            <div class="panel" id="panel-signup">
+
+                <h2 class="form-title">
+                    Join The Cuddle Club 🐼
+                </h2>
+
+                <p class="form-sub">
+                    Create your cute account
+                </p>
+
+                <div class="input-group">
+
+                    <label>Name</label>
+
+                    <span class="input-icon">
+                        🐾
+                    </span>
+
+                    <input
+                        type="text"
+                        placeholder="Your Name">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <span class="input-icon">
+                        📧
+                    </span>
+
+                    <input
+                        type="email"
+                        placeholder="panda@example.com">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <span class="input-icon">
+                        🔐
+                    </span>
+
+                    <input
+                        type="password"
+                        id="su-pw"
+                        placeholder="Create password"
+                        oninput="checkStrength(this.value)">
+
+                    <span
+                        class="pw-toggle"
+                        onclick="togglePw('su-pw',this)">
+
+                        👁️
+
+                    </span>
+
+                    <div class="strength-meter">
+
+                        <div class="strength-bar" id="sb1"></div>
+                        <div class="strength-bar" id="sb2"></div>
+                        <div class="strength-bar" id="sb3"></div>
+                        <div class="strength-bar" id="sb4"></div>
+
+                    </div>
+
+                    <div
+                        class="strength-label"
+                        id="strength-label">
+
+                        Type password...
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Confirm Password</label>
+
+                    <span class="input-icon">
+                        ✅
+                    </span>
+
+                    <input
+                        type="password"
+                        id="su-confirm"
+                        placeholder="Confirm password">
+
+                </div>
+
+                <button
+                    class="btn-submit"
+                    onclick="handleSubmit('signup')">
+
+                    🐼 Create Account
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <span class="panda-badge">
+            🐼
+        </span>
+
+        <span class="bear-badge">
+            🧸
+        </span>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
