@@ -3,7 +3,7 @@
 A cute and responsive Login & Signup page built using "HTML, CSS, and JavaScript".
 
 
-🔗 Live Demo: https: cute-login-page.vercel.app
+🔗 Live Demo: cute-login-page.vercel.app
 
 
 # ✨ Features
