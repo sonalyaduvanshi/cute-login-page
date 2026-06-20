@@ -1,8 +1,8 @@
-🧸 Teddy Login UI
+#🧸 Teddy Login UI
 
 A cute and responsive Login & Signup page built using **HTML, CSS, and JavaScript**.
 
- ✨ Features
+# ✨ Features
 
 - 🧸 Animated Teddy Bear Mascot
 - 🐼 Panda Corner Badge
@@ -18,7 +18,7 @@ A cute and responsive Login & Signup page built using **HTML, CSS, and JavaScrip
 - ♿ Accessibility Support
 
 
-📂 Project Structure
+#📂 Project Structure
 
 login-page/
 │
@@ -27,7 +27,7 @@ login-page/
 ├── script.js
 └── README.md
 
-🛠️ Technologies Used
+#🛠️ Technologies Used
 
 - HTML5
 - CSS3
@@ -35,9 +35,9 @@ login-page/
 
 
 
- 🎨 Concepts Practiced
+# 🎨 Concepts Practiced
 
- HTML
+# HTML
 
 - Forms
 - Labels
@@ -45,7 +45,7 @@ login-page/
 - SVG Graphics
 - Semantic Structure
 
-CSS
+# CSS
 
 - Flexbox
 - Variables
@@ -56,7 +56,7 @@ CSS
 - Media Queries
 - Responsive Design
 
-JavaScript
+# JavaScript
 
 - DOM Manipulation
 - Event Handling
@@ -64,6 +64,9 @@ JavaScript
 - Password Strength Checker
 - Toast Notifications
 - Dynamic UI Updates
+
+# Overview 
+<img width="1920" height="1080" alt="overview" src="https://github.com/user-attachments/assets/2cd3d761-ff00-4c76-ae9e-f84308f71c0d" />
 
 
 
